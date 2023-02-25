@@ -10,7 +10,7 @@ app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"))
 
-mongoose.connect("mongodb+srv://admin-Mahesh:"+PROCESS.ENV.PASSWORD+"@clustertodolist.wsbeefz.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://admin-Mahesh:"+process.env.PASSWORD+"@clustertodolist.wsbeefz.mongodb.net/todolistDB");
 // mongoose.connect("mongodb://localhost:27017/todolistDB");
 
 const itemSchema = mongoose.Schema({
@@ -155,6 +155,6 @@ app.post("/delete",(req,res)=>{
     }
 })
 
-app.listen(PROCESS.ENV.PORT,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("server listening on port 3000.. ");
 })
