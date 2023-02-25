@@ -1,6 +1,6 @@
 # Taskify : to-do List WebAPP
 
-Tech stack : HTML | CSS | EJS | NodeJs | EXpressJs | MongoDB
+## Tech stack : HTML | CSS | EJS | NodeJs | EXpressJs | MongoDB
 
 ## Description : 
 
